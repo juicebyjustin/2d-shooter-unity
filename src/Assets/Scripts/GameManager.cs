@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    int score = 0;
+    
     public GameObject target;
+    public Text scoreText;
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Spawn", 1f, 1f);
+        InvokeRepeating("Spawn", 5f, 5f);
     }
 
     // Update is called once per frame
@@ -27,8 +31,16 @@ public class GameManager : MonoBehaviour
         var randomPosition = new Vector3(positionX, positionY, 0);
 
         Instantiate(target, randomPosition, Quaternion.identity);
+
+        IncrementScore();
     }
 
-    
+    public void IncrementScore()
+    {
+        score++;
+        print(score);
+
+        scoreText.text = score.ToString();
+    }
 }
 
