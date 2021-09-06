@@ -16,24 +16,22 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Spawn", 2f, 2f);
+        InvokeRepeating("Spawn", 1f, 2f);
     }
 
     // Update is called once per frame
     void Update()
     {
         if(win){
-            CancelInvoke("Spawn");
-
-
             winText.SetActive(true);
-        }
 
+            CancelInvoke("Spawn");
+        }
+        
         if(Input.GetMouseButtonDown(0) && score > 0)
         {
             GetComponent<AudioSource>().Play();
         }
-
     }
 
     void Spawn()

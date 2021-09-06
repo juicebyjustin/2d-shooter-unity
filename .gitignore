@@ -67,3 +67,8 @@ src/Build
 .DS_Store
 **/.DS_Store
 *.DS_Store
+src/Library/Il2cppBuildCache
+src/Library/PlayerDataCache
+src/Library/StateCache
+src/Library/webgl_cache
+src/Library/il2cpp_cache
