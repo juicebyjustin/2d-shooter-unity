@@ -64,3 +64,6 @@ src/Logs
 src/Library/ShaderCache
 src/Assets/.DS_Store
 src/Build
+.DS_Store
+**/.DS_Store
+*.DS_Store
