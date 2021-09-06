@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     int score = 0;
-    int winningScore = 1;
+    int winningScore = 10;
     bool win = false;
     
     public GameObject target;
@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
             winText.SetActive(true);
         }
 
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && score > 0)
         {
             GetComponent<AudioSource>().Play();
         }
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
 
         Instantiate(target, randomPosition, Quaternion.identity);
 
-        IncrementScore();
+      //  IncrementScore();
     }
 
     public void IncrementScore()

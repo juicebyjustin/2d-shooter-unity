@@ -17,11 +17,19 @@ public class Target : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
-    void OnMouseDown()
+
+    /*void OnMouseDown()
     {
         // Destroy the gameObject after clicking on it
+        //Destroy(gameObject);
+    }*/
+    
+    private void OnMouseDown()
+    {
+        print("mouse");
         Destroy(gameObject);
+        gameManager.IncrementScore();
+        //EventSystem.current.SetSelectedGameObject(this.gameObject);
     }
 }

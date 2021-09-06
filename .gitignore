@@ -62,3 +62,5 @@ src/Library/Artifacts
 src/Temp
 src/Logs
 src/Library/ShaderCache
+src/Assets/.DS_Store
+src/Build
