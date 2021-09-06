@@ -397,6 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 6650417488738902965, guid: 6115eae1bd0fc4736be9f00a78cb7641, type: 3}
+  scoreText: {fileID: 558300359}
 --- !u!4 &2077312076
 Transform:
   m_ObjectHideFlags: 0
